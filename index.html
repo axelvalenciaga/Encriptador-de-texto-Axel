@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="./assets/logo.png" alt="Logo alura" class="logo">
+        </h1>
+    </header>
+    
+
+    <main>
+        
+        <section class="contenedor__izquierda">
+
+            <textarea class="entrada__texto"  id="entradaDeTexto" placeholder="Ingresa el texto aquí..."></textarea >
+                <div class="condicion">
+                    <p class="texto__condicion">Solo letras minúsculas y sin acentos</p>
+                    <img src="./assets/bi_exclamation-circle-fill.png" alt="icono de advertencia">
+                </div>
+                <div class="buttons">
+                    <button type= "submit" class = "boton__encriptar">Encriptar</button>
+                    <button type= "submit" class = "boton__desencriptar">Desencriptar</button>
+                </div> 
+          
+        </section>
+       
+        <section class="contenedor__derecha">
+            <div class="contenedor__derecha__contenido">
+                <img src="./assets/Muñeco.png" alt="muñeco" class="muñeco">
+                <p class="mensaje__1"> Ningun mensaje fue encontrado</p> 
+                <p class="mensaje__2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <textarea id="salidaDeTexto" class="salida__texto"></textarea>
+            <button type= "submit" class="boton__copiar">Copiar</button>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Axel Valencia Montoya</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
